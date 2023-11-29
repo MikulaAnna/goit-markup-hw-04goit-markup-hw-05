@@ -367,9 +367,13 @@ main {
   margin-bottom: 16px;
 }
 
-.footer__text {
+.footer__discribe {
   color: #f4f4fd;
   max-width: 264px;
+}
+.footer__text {
+  color: #fff;
+  font-weight: 500;
 }
 
 .footer__logo .logo__accent {
@@ -433,10 +437,14 @@ main {
 .form-subscribe__button {
   padding: 8px 24px;
   display: flex;
-  gap: 16px;
   justify-content: center;
   align-items: center;
   fill: #f4f4fd;
+  min-width: 165px;
+}
+
+.form-subscribe__icon {
+  margin-left: 16px;
 }
 
 /* Modal */
