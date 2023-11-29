@@ -50,16 +50,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-main {
-  flex-grow: 1;
-}
-
-.wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 .container {
   max-width: 1158px;
   margin: 0 auto;
@@ -448,8 +438,6 @@ main {
 
 .form-subscribe__icon {
   margin-left: 16px;
-  width: 24px;
-  height: 24px;
 }
 
 /* Modal */
@@ -477,12 +465,19 @@ main {
   pointer-events: auto;
 }
 .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   border-radius: 4px;
   background: #fcfcfc;
   padding: 72px 24px 24px;
   position: relative;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__button {
@@ -497,17 +492,20 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__button:hover {
+.modal__button:hover,
+.modal__button:focus {
   background-color: #404bbf;
+  border: none;
   fill: #ffffff;
-  border-color: #404bbf;
 }
-
-.modal__title {
+.modal__icon-button {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__text {
   font-size: 16px;
   color: #2e2f42;
   font-weight: 500;
@@ -517,7 +515,7 @@ main {
 .form__field {
   margin-bottom: 8px;
 }
-.form__field:last-child {
+.form__comment {
   margin-bottom: 16px;
 }
 .form__label {
@@ -562,6 +560,7 @@ main {
 }
 
 .form__textarea {
+  height: 120px;
   width: 100%;
   height: 100%;
   font-size: 12px;

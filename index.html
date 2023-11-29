@@ -472,7 +472,7 @@
 					</label>
 
 					<button class="form-subscribe__button button" type="submit">Subscribe
-						<svg class="form-subscribe__icon" width="24px" height="24px">
+						<svg class="form-subscribe__icon" width="24" height="24">
 							<use href="./images/icons.svg#icon-subscribe"></use>
 						</svg>
 					</button>
@@ -487,16 +487,16 @@
 
 
 
-	<div class="backdrop">
+	<div class="backdrop is-open">
 		<div class="modal">
 
 			<button class="modal__button" type="button">
-				<svg width="24px" height="24px">
+				<svg class="modal__icon-button" width="8" height="8">
 					<use href="./images/icons.svg#icon-close"></use>
 				</svg>
 			</button>
 
-			<h2 class="modal__title">Leave your contacts and we will call you back</h2>
+			<p class="modal__text">Leave your contacts and we will call you back</p>
 
 			<form name="modal-form" class="modal__form form">
 
@@ -504,33 +504,33 @@
 					<label class="form__label" for="user-name">Name</label>
 					<div class="form__body">
 						<input class="form__input" type="text" id="user-name" name="user-name" required>
-						<svg class="modal__icon" width="18px" height="18px">
+						<svg class="modal__icon" width="18" height="18">
 							<use href="./images/icons.svg#icon-user"></use>
 						</svg>
 					</div>
 				</div>
 				<div class="form__field">
-					<label class="form__label" for="user-phone">Name</label>
+					<label class="form__label" for="user-phone">Phone</label>
 					<div class="form__body">
 						<input class="form__input" type="tel" id="user-phone" name="user-phone" required>
-						<svg class="modal__icon" width="18px" height="24px">
+						<svg class="modal__icon" width="18" height="24">
 							<use href="./images/icons.svg#icon-phone"></use>
 						</svg>
 					</div>
 				</div>
 				<div class="form__field">
-					<label class="form__label" for="user-email">Name</label>
+					<label class="form__label" for="user-email">Email</label>
 					<div class="form__body">
 						<input class="form__input" type="email" id="user-email" name="user-email" required>
-						<svg class="modal__icon" width="18px" height="24px">
+						<svg class="modal__icon" width="18" height="24">
 							<use href="./images/icons.svg#icon-email"></use>
 						</svg>
 					</div>
 				</div>
 
-				<div class="form__field">
+				<div class="form__comment">
 					<label class="form__label" for="user-comment">Comment</label>
-					<textarea id="user-comment" class="form__textarea" name="user-comment" placeholder="Text input" rows="7"></textarea>
+					<textarea id="user-comment" class="form__textarea" name="user-comment" placeholder="Text input"></textarea>
 				</div>
 
 				<div class="form__checkbox checkbox">
