@@ -414,11 +414,14 @@ main {
 .form-subscribe__input {
   width: 264px;
   height: 40px;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   color: #fff;
   padding: 8px 16px;
   border-radius: 4px;
   border: 1px solid #fff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: transparent;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -445,6 +448,8 @@ main {
 
 .form-subscribe__icon {
   margin-left: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 /* Modal */
