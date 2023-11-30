@@ -560,6 +560,7 @@ body {
 }
 
 .form__textarea {
+  display: block;
   height: 120px;
   width: 100%;
   font-size: 12px;
